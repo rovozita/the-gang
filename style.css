@@ -1,3 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
-	background-color: yellow;
+font-family: 'Prompt', 'Roboto', sans-serif;
+padding-bottom: 0;
+margin: 0;
 }
+
+h1{
+font-size: 36px;
+font-weight: bold;
+}
+
+h3{
+font-size: 24px;
+font-weight: 400;
+}
+
+h4{
+font-size: 18px;
+font-weight: bold;
+}
+
+.hero-banner h1{
+	color: white;
+	margin: 26px 0 10px;
+}
+
+.hero-banner h3{
+	color: white;
+	margin:0 0 35px;
+}
+
+.hero-banner h4,
+.hero-banner h4 a{
+	color: white;
+	margin: 0;
+}
+
+.wrapper{
+width: 940px;
+margin: 0 auto;
+
+}
+
+.hero-banner{
+	background-color: #0A043C;
+	min-height: 100vh;
+	padding: 50px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+
+}
+
+
+.character1{
+background: url(img/character1.png) no-repeat 0 0;
+background-size: contain;
+position: absolute; top: 262px; right: 30%;
+width: 291.45px;
+height: 307.85px;
+}
+
+.character3{
+background: url(img/character3.png) no-repeat 0 0;
+background-size: contain;
+position: absolute; top: 212px; left: 1080px;
+width: 246.69px;
+height: 329.85px;
+transform: rotate(15deg);
+}
+
+.character2{
+background: url(img/character2.png) no-repeat 0 0;
+background-size: contain;
+position: absolute; top: 15%; right: 12%;
+width: 379px;
+height: 384.85px;
+}
+
+
+
+a.cta,
+button.cta{
+font-size: 18px;
+font-family: Roboto;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+background-color: #035067;
+display: inline-block;
+border: 4px solid;
+border-color: rgba(255, 255, 255, 0.2);
+border-radius: 8px;
+box-sizing: border-box;
+box-shadow: 0px 0px 20px rgba(3, 80, 111, 0.8);
+text-decoration: none;
+padding: 12px 50px;
+}
+
+a.cta.alt,
+button.cta.alt{
+	color: #0A043C;
+	background-color: #FCD05E;
+	border-color: #CAA64B;
+	box-shadow: 0px 0px 20px rgba(252, 208, 94, 0.8)
+
+}
+
+
+
+/*<div class="hero-banner">
+	<div class="wrapper">
+		<h4>Zita from <a href="">Justdesign</a> presents</h4>
+		<h1>The Silliest &amp; <br/> Most Awesome Gang <br/> in the World!</h1>
+		<h3> It' Circle Guy, Red Guy &amp; Blue <br/> Guy. They're the best of friends.</h3>
+		<a class="cta alt" href="#more-info">Read more</a>
+	</div>
+	<div class="character1"></div>
+	<div class="character2"></div>
+	<div class="character3"></div>
+</div>*/
+
