@@ -174,8 +174,20 @@ text-align: center;
 
 .more-info h1{
 	text-align: center;
+	margin-top: 50px;
 }
 
+.more-info p{
+	margin-top: 42px 44px;
+}
+
+.highlight{
+	background-color: #FFADF9;
+	color: red;
+	padding: 0 5px;
+	display: inline;
+	font-weight: 800;
+}
 
 /* <div class="more-info" id="more-info">
 	<h1>Join Our Fan Club</h1>
