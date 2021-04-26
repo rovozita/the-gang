@@ -109,6 +109,14 @@ box-sizing: border-box;
 box-shadow: 0px 0px 20px rgba(3, 80, 111, 0.8);
 text-decoration: none;
 padding: 12px 50px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+a.cta:active,
+button.cta:active{
+	opacity: 0.7;
 }
 
 a.cta.alt,
@@ -128,6 +136,7 @@ nav{
 	position: sticky;
 	top: 0px;
 	margin: -24px;
+	z-index: 1;
 }
 
 nav .logo{
@@ -189,10 +198,124 @@ text-align: center;
 	font-weight: 800;
 }
 
-/* <div class="more-info" id="more-info">
-	<h1>Join Our Fan Club</h1>
-	<p>Every week we have <span class="highlight">a party.</span>  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-	<button class="cta">Sign me Up!</button>
+.sep{
+	width: 470px;
+	height: 10px;
+	margin: 70px auto;
+	border-radius: 4px;
+	background-color: black;
+
+}
+
+.story h1{
+	font-size: 40px;
+	line-height: 50px;
+	}
+
+.story p{
+	text-align: left;
+}
+
+.nb-list{
+	width: 470px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #EDEDED;
+	float: left;
+	margin: 0 20px 0 0;
+	border-radius: 10px;
+	position: relative;
+}
+
+.nb-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 20px;
+	padding: 6px 20px;
+	box-sizing: border-box;
+}
+
+.nb-list li.red{background-color: red;}
+.nb-list li.blue{background-color: blue;}
+.nb-list li.gray{background-color: rgba(0,0,0, 0.1);}
+.nb-list li.yellow{background-color: yellow;
+color: black;}
+.nb-list li.salmon{background-color: salmon;}
+.nb-list li.pink{background-color: pink;}
+
+.nb-list li.dragging{
+	position: absolute;
+	top: 70px;
+	left: 60px;
+	right: -20px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px rgba(0,0,0, .3);
+}
+
+.nb-list li.dragging:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 51.2px;
+	height: 51.2px;
+	background: url(img/drag.png) no-repeat 0 0;
+	background-size: contain;
+	bottom: -20px;
+	left: 60%;
+}
+
+.gang-img{
+	display: block;
+	margin: 0 auto;
+}
+
+.footer.wrapper{
+	text-align: center;
+}
+.footer{
+	margin: 85px 0 45px;
+}
+
+footer p{
+	text-align: center;
+	color: rgba(0,0,0, 0.4);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer a{
+	color: rgba(0,0,0, 0.4);
+}
+
+.popup{
+	display: none;
+}
+
+/* <div class="sep"></div>
+<div class="story" id="story">
+	<ul class="nb-list">
+		<li class="blue">Rock 'n Roll</li>
+		<li class="gray">&nbsp;</li>
+		<li class="yellow dragging">Laugther</li>
+		<li class="red">Square Offs</li>
+		<li class="pink">Circuitous Routes</li>
+		<li class="salmon">Trigonomety</li>
+		<li class="blue">Red Hats</li>
+		<li class="yellow">Being Silly</li>
+	</ul>
+	<h1>
+		Left: Things We Find Important <br/> Below: Our Story
+	</h1>
+	<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. </p>
+
+	<p> The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. </p>
+
+	<p>	A collection of textile samples lay spread out on the table. Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. </p>
+	
 </div>*/
 
 
