@@ -109,7 +109,7 @@ box-sizing: border-box;
 box-shadow: 0px 0px 20px rgba(3, 80, 111, 0.8);
 text-decoration: none;
 padding: 12px 50px;
-border: none;
+border: 4px solid rgba(255, 255, 255, 0.2);
 outline: none;
 cursor: pointer;
 }
@@ -239,13 +239,14 @@ text-align: center;
 	box-sizing: border-box;
 }
 
-.nb-list li.red{background-color: red;}
-.nb-list li.blue{background-color: blue;}
+.nb-list li.red{background-color: #F19281;}
+.nb-list li.blue{background-color: #03506F;}
 .nb-list li.gray{background-color: rgba(0,0,0, 0.1);}
-.nb-list li.yellow{background-color: yellow;
+.nb-list li.yellow{background-color: #FCD05E;
 color: black;}
-.nb-list li.salmon{background-color: salmon;}
-.nb-list li.pink{background-color: pink;}
+.nb-list li.salmon{background-color: #FFE3DE;
+color: black}
+.nb-list li.pink{background-color: #ED1E79;}
 
 .nb-list li.dragging{
 	position: absolute;
@@ -292,6 +293,7 @@ footer a{
 }
 
 .popup{
+	display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -300,8 +302,12 @@ footer a{
 	z-index: 2;
 }
 
+.popup.show{
+	display: block;
+}
+
 .popup .blanket{
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(0,0,0,.8);
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -312,14 +318,14 @@ footer a{
 .popup .content{
 	box-sizing: border-box;
 	position: absolute;
-	width: 960px;
-	height: 500px;
-	top: 50%;
-	margin-top: -250px;
-	padding: 30px 40px;
+	width: 800px;
+	height: 340px;
+	top: 25%;
+	margin-top: 40px;
+	padding: 30px 80px 0 80px;
 	background-color: white;
 	text-align: center;
-	margin-left: -480px;
+	margin-left: -385px;
 	left: 50%;
 }
 
@@ -327,16 +333,55 @@ footer a{
 	margin: 10px 0 20px;
 }
 
-.popup .cta, .popup .buttom{
-	position: absolute;
-	left: 40%;
-	bottom: 60px;
-	margin-top: 40px;
+
+.popup .row{
+width: 622px;
 }
 
+.popup .row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
 
+.popup .item{
+	float: left;
+	width: 300px;
+	margin-left: 22px;
+	text-align: left;
+	margin-bottom: 20px;
+}
 
-.popup .close{
+.popup .item:first-child{
+	margin-left: 0;
+}
+
+.popup .item label{
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.popup .item input[type='text']{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	border: 2px solid #0A043C;
+	height: 40px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	
+}
+
+.popup .blanket .cta, .popup .blanket .buttom{
+	position: absolute;
+	right: 96px;
+	margin-top: 1px;
+}
+
+.popup .blanket .close{
 	position: absolute;
 	width: 70px;
 	height: 70px;
@@ -349,47 +394,6 @@ footer a{
 	overflow: hidden;
 	text-indent: -999px;
 	cursor: pointer;
-}
-
-
-.popup .row{
-
-}
-
-.popup .row:after{
-	content: '';
-	display: table;
-	clear: both;
-}
-
-.popup .item{
-	float: left;
-	width: 415px;
-	margin-left: 40px;
-	text-align: left;
-}
-
-.popup .item:first-child{
-	margin-left: 0;
-}
-
-.popup .item label{
-	display: block;
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-.popup .item input[type='text']{
-	display: block;
-	font-size: 30px;
-	font-weight: bold;
-	border: 4px solid #111111;
-	height: 70px;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 15px 20px;
-	
 }
 
 /* <div class="popup">
